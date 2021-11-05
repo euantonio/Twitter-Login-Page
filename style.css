@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Main*/
+
+main {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    margin: auto;
+}
+
+body {
+    background-color: black;
+}
+
+/*Container esquerda*/
+.container-esquerda {
+    background: url(background.png) center center/cover;
+    width: 54%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22rem;
+    color: white;
+}
+
+/*Container direita*/
+.container-direita {
+    width: 46%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    padding-left: 35px;
+}
+
+.logo i {
+    color: rgb(217, 217, 217);
+    font-size: 2.5rem;
+}
+
+button img {
+    height: 20px;
+    width: auto;
+    margin-right: 8px;
+}
+
+.titulo h1 {
+    color: rgb(217, 217, 217);
+    padding: 50px 0;
+    font-size: 62px;
+}
+
+.subtitulo h3 {
+    color: rgb(217, 217, 217);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.google button {
+    color: #686e72;
+}
+
+button {
+    height: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 100ms ease;
+}
+
+button:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.termos p {
+    color: rgb(110, 118, 125);
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.container-direita a {
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+}
+
+.container-direita a:hover {
+    text-decoration: underline;
+}
+
+.entrar p {
+    color: rgb(230, 230, 230);
+    font-size: 15px;
+}
+
+/*Footer*/
+.footer {
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(110, 118, 125);
+    font-size: 12px;
+    flex-wrap: wrap;
+    max-width: 1920px;
+}
+
+.footer p {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer p:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1680px) {
+    .footer {
+        margin: 15px;
+    }
+
+    .container-esquerda {
+        width: 54%;
+        height: 90vh;
+        transition: 300ms ease;
+    }
+    
+    /*Container direita*/
+    .container-direita {
+        width: 46%;
+        height: 90vh;
+        transition: 300ms ease;
+    }
+}
+
+@media (max-width: 1430px) {
+
+    .container-esquerda {
+        width: 40%;
+        height: 90vh;
+        transition: 300ms ease;
+    }
+    
+    /*Container direita*/
+    .container-direita {
+        width: 60%;
+        height: 90vh;
+        transition: 300ms ease;
+    }
+}
+
+@media (max-width: 1070px) {
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-esquerda {
+        width: 100%;
+        height: 45vh;
+        transition: 300ms ease;
+        font-size: 15rem;
+        order: 2;
+    }
+    
+    /*Container direita*/
+    .container-direita {
+        width: 100%;
+        height: 90vh;
+        transition: 300ms ease;
+        order: 1;
+    }
+
+    /*Footer*/
+    footer p {
+        padding: 5px 0;
+    }
+}
